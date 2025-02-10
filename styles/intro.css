@@ -1,0 +1,27 @@
+#intro {
+    align-content: center;
+    height: auto;
+    width: 100vw;
+}
+
+#intro h2,
+#intro h3 {
+    margin-bottom: 16px;
+}
+
+
+#intro .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: -2;
+}
+
+@media screen and (min-width: 800px) {
+    #intro {
+        padding: 5vw;
+    }
+}

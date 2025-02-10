@@ -1,0 +1,15 @@
+#hero {
+    padding-top: 5vw;
+    height: auto;
+}
+
+@media screen and (min-width: 800px) {
+    #hero {
+        padding: 5vw;
+        padding-bottom: 7.5vw;
+    }
+
+    #hero p {
+        margin-left: 0;
+    }
+}

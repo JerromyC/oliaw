@@ -1,4 +1,15 @@
 @import url(./styles/nav.css);
+@import url(./styles/hero.css);
+@import url(./styles/intro.css);
+@import url(./styles/shop.css);
+@import url(./styles/about.css);
+@import url(./styles/why.css);
+@import url(./styles/testimonials.css);
+@import url(./styles/blog.css);
+@import url(./styles/footer.css);
+
+@import url(./styles/component-styles/buttons.css);
+
 
 
 * {
@@ -53,15 +64,17 @@ section .content-wrapper {
     align-content: center;
     width: 100%;
     margin: 8px auto;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 16px;
 }
 
 .tile {
     display: flex;
     flex-direction: column;
     align-content: center;
+    /* align-items: center; */
     margin: auto;
     margin-bottom: 5vw;
-    width: 100%;
     background-color: #fff;
     padding: 20px;
     border-radius: 20px;
@@ -101,83 +114,12 @@ a {
     text-decoration: none;
 }
 
-/* --------------------------------- buttons */
-
-.button-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    border-radius: 20px 0px 20px 0px;
-    font-size: clamp(14pt, 3vw, 18pt);
-    padding: 2px;
-    border: none;
-}
-
-.button:hover {
-    cursor: pointer;
-    scale: 0.95;
-}
-
-.green-button {
-    background-color: var(--secondary);
-    color: var(--primary);
-}
-
-.white-button {
-    background-color: #FCF9F6;
-    border: var(--secondary) 2px solid;
-    color: var(--secondary);
-}
-
-.orange-button {
-    background-color: var(--quaternary);
-    color: var(--primary);
-}
-
-.small-button,
-.small-button-light,
-.small-button-orange {
-    background-color: var(--tertiary);
-    color: var(--primary);
-    width: 50%;
-    height: 25px;
-    font-size: clamp(12pt, 8%, 16pt);
-    margin: 16px auto auto;
-}
-
-.small-button-light {
-    background-color: var(--primary);
-    color: var(--secondary);
-}
-
-.small-button-orange {
-    background-color: var(--quaternary);
-}
-
 /* ------------------------------------ spacers */
 
 .sixty-four-px {
     height: 64px;
 }
 
-
-/* \/ \/ \/ ----- HERO STYLES ----- \/ \/ \/*/
-
-#hero {
-    padding-top: 5vw;
-    height: auto;
-}
 
 .topper {
     font-family: 'Raleway', sans-serif;
@@ -196,224 +138,6 @@ a {
     line-height: 1;
 }
 
-/* /\ /\ /\ ----- END HERO Styles ----- /\ /\ /\ */
-/* \/ \/ \/ ----- INTRO STYLES ----- \/ \/ \/*/
-
-#intro {
-    align-content: center;
-    height: auto;
-    width: 100vw;
-}
-
-#intro h2,
-#intro h3 {
-    margin-bottom: 16px;
-}
-
-
-#intro .bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #FFFFFF;
-    z-index: -2;
-}
-
-/* /\ /\ /\ ----- END Intro Styles ----- /\ /\ /\ */
-/* \/ \/ \/ ----- SHOP STYLES ----- \/ \/ \/*/
-
-#shop {}
-
-.category p {
-    margin-bottom: 16px;
-}
-
-.category .button {
-    margin-top: auto;
-}
-
-.product>img {
-    max-width: 100px;
-    margin: auto;
-}
-
-.product span {
-    margin: 16px auto;
-    font-size: clamp(20pt, 20%, 25pt);
-}
-
-.product p {
-    font-size: clamp(12pt, 8%, 16pt);
-    font-weight: bold;
-    text-align: center;
-}
-
-.action-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.action-wrapper img {
-    width: 25px;
-}
-
-.action-wrapper img:hover {
-    cursor: pointer;
-}
-
-#shop .content-wrapper .green-button {
-    max-width: 300px;
-    margin: auto;
-}
-
-/* /\ /\ /\ ----- END SHOP Styles ----- /\ /\ /\ */
-/* \/ \/ \/ ----- ABOUT STYLES ----- \/ \/ \/*/
-
-#about {
-    display: flex;
-    padding: 10vh 5vw;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.about-wrapper {
-    height: 100%;
-    width: 100%;
-    padding: 10vh 5vw;
-    margin: auto;
-    background-color: #FFFFFFE6;
-    border-radius: 50px 0 50px 0;
-}
-
-.about-wrapper h2 {
-    margin-bottom: 16px;
-}
-
-.about-wrapper .white-button {
-    max-width: 300px;
-    margin: 32px auto auto;
-}
-
-.about-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: auto;
-    width: 100%;
-    z-index: -1;
-}
-
-/* /\ /\ /\ ----- END ABOUT Styles ----- /\ /\ /\ */
-/* \/ \/ \/ ----- WHY STYLES ----- \/ \/ \/*/
-
-#why {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-
-#why h2 {
-    margin-bottom: 16px;
-}
-
-.benefit {
-    width: 100%;
-    text-align: center;
-    background-color: #fff;
-}
-
-.benefit img {
-    width: 30%;
-    margin: auto;
-}
-
-/* /\ /\ /\ ----- END WHY Styles ----- /\ /\ /\ */
-/* \/ \/ \/ ----- TESTIMONIALS STYLES ----- \/ \/ \/*/
-
-#testimonials {
-    background-color: var(--secondary);
-    color: var(--primary);
-}
-
-.line {
-    display: block;
-    width: 80%;
-    margin: auto;
-    height: 2px;
-    background-color: var(--primary);
-}
-
-.line:first-of-type {
-    margin-bottom: 64px;
-}
-
-.line:last-of-type {
-    margin-top: 64px;
-}
-
-#testimonials h2 {
-    margin-bottom: 16px;
-    font-family: 'Ralewy', sans-serif;
-}
-
-#testimonials p {
-    font-style: italic;
-}
-
-#testimonials p span {
-    display: block;
-    margin-bottom: 32px;
-    font-style: none;
-    font-weight: bold;
-}
-
-/* /\ /\ /\ ----- END TESTIMONIALS Styles ----- /\ /\ /\ */
-/* \/ \/ \/ ----- BLOG STYLES ----- \/ \/ \/*/
-
-.post {
-    width: 100%;
-}
-
-.post:first-of-type {
-    margin-bottom: 5vw;
-}
-
-.post-header {
-    padding: 32px;
-    background-color: var(--secondary);
-    color: var(--primary);
-    text-align: center;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.post-image {
-    margin: 0px;
-    margin-bottom: -10px;
-    padding: 0px;
-}
-
-.post-image img {
-    width: 100%;
-}
-
-.post-exerpt {
-    background-color: var(--tertiary);
-    padding: 32px;
-    color: var(--primary);
-    border-radius: 0px 0px 20px 20px;
-}
-
-/* /\ /\ /\ ----- END BLOG Styles ----- /\ /\ /\ */
-/* \/ \/ \/ ----- FOOTER STYLES ----- \/ \/ \/*/
-
 .background-image {
     position: absolute;
     top: 0;
@@ -423,93 +147,6 @@ a {
     object-fit: cover;
     z-index: -1;
 }
-
-footer {
-    background-color: var(--secondary);
-    color: var(--primary);
-    padding: 10vw;
-}
-
-footer h2 {
-    font-weight: 300;
-    font-style: none;
-    font-family: 'Raleway', sans-serif;
-    margin-bottom: 32px;
-}
-
-.signup-inner {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.signup-inner input,
-.signup-inner a {
-    width: 100%;
-    height: 40px;
-    padding: 4px 8px;
-    border-radius: 10px;
-}
-
-.signup-inner a {
-    background-color: var(--quaternary);
-    color: var(--primary);
-    margin-top: 5vw;
-}
-
-.footer-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 16px 0px;
-    margin: 32px auto 16px;
-}
-
-.footer-nav li a {
-    color: var(--primary);
-}
-
-.footer-section {
-    margin-top: 64px;
-}
-
-.footer-section span {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.footer-line {
-    width: 100%;
-    height: 2px;
-    margin: 8px auto 16px;
-    background-color: var(--primary);
-}
-
-.footer-section ul li {
-    margin-bottom: 16px;
-}
-
-.footer-section ul li a {
-    color: var(--primary);
-}
-
-.social-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.social-wrapper img {
-    width: 25%;
-    max-width: 200px;
-}
-
-/* /\ /\ /\ ----- END FOOTER Styles ----- /\ /\ /\ */
-
 
 .shadow-host-companion {
     display: none;
@@ -530,26 +167,8 @@ footer h2 {
         width: clamp(300px, 90%, 2000px);
     }
 
-    /* section .content-wrapper > * {
-        margin-right: auto;
-        margin-left: 0px;
-    } */
-
-    #hero {
-        padding: 5vw;
-        padding-bottom: 7.5vw;
-    }
-
-    #hero p {
-        margin-left: 0;
-    }
-
     .inner-wrapper {
         margin-top: 5vw;
-    }
-
-    #intro {
-        padding: 5vw;
     }
 
     #intro h2,
@@ -558,115 +177,7 @@ footer h2 {
         margin-bottom: 16px;
     }
 
-
-    /* \/ \/ \/ ----- HERO STYLES ----- \/ \/ \/*/
-
     .sub-heading {
         width: 75%;
     }
-
-    .button-wrapper {
-        flex-direction: row;
-    }
-
-    /* /\ /\ /\ ----- END HERO Styles ----- /\ /\ /\ */
-    /* \/ \/ \/ ----- SHOP STYLES ----- \/ \/ \/*/
-
-    #shop .content-wrapper {
-        width: clamp(800px, 90%, 1500px);
-        margin: auto;
-    }
-
-    .category {
-        width: 32%;
-        background-color: #fff;
-        padding: 20px;
-    }
-
-    .product {
-        width: clamp(250px, 24%, 400px);
-    }
-
-    /* /\ /\ /\ ----- END SHOP Styles ----- /\ /\ /\ */
-    /* \/ \/ \/ ----- WHY STYLES ----- \/ \/ \/*/
-
-    #why .content-wrapper h2,
-    #why .content-wrapper>p {
-        width: clamp(450px, 60%, 1500px);
-        margin: auto;
-    }
-
-    .benefit {
-        width: clamp(250px, 30%, 50%);
-    }
-
-    .benefit p {
-        width: 100%;
-    }
-
-    .benefit img {
-        width: 50%;
-        max-width: 150px;
-        margin: auto;
-        margin-bottom: 32px;
-    }
-
-    /* /\ /\ /\ ----- END WHY Styles ----- /\ /\ /\ */
-    /* \/ \/ \/ ----- WHY STYLES ----- \/ \/ \/*/
-
-
-
-    /* /\ /\ /\ ----- END WHY Styles ----- /\ /\ /\ */
-    /* \/ \/ \/ ----- WHY STYLES ----- \/ \/ \/*/
-
-    .post {
-        width: clamp(250px, 45%, 750px);
-        margin: 0;
-    }
-
-    /* /\ /\ /\ ----- END WHY Styles ----- /\ /\ /\ */
-
-    /* footer */
-
-    .signup-inner {
-        width: 60%;
-        justify-content: center;
-        align-content: center;
-        margin: auto;
-    }
-
-    .signup-inner input, 
-    .signup-inner a {
-        height: 40px;
-        padding: 4px 8px;
-        border: none;
-    }
-
-    .signup-inner input {
-        width: 80%;
-        border-radius: 20px 0 0 20px;
-    }
-
-    .signup-inner a {
-        width: 20%;
-        background-color: var(--quaternary);
-        color: var(--primary);
-        margin-top: 0;
-        border-radius: 0 20px 20px 0;
-    }
-
-    .footer-nav {
-        width: 50%;
-        max-width: 500px;
-    }
-
-    .footer-section {
-        max-width: 300px;
-        margin: 64px auto 0;
-    }
-
-    .background-image {
-        width: 100vw;
-    }
-
 }

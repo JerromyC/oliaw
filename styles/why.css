@@ -1,0 +1,47 @@
+#why {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#why h2 {
+    margin-bottom: 16px;
+}
+
+.benefit {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.benefit img {
+    width: 30%;
+    margin: auto;
+}
+
+
+@media screen and (min-width: 800px) {
+    #why .content-wrapper h2,
+    #why .content-wrapper>p {
+        width: clamp(450px, 60%, 1500px);
+        margin: auto;
+    }
+
+    .benefit {
+        width: clamp(250px, 30%, 50%);
+    }
+
+    .benefit p {
+        width: 100%;
+    }
+
+    .benefit img {
+        width: 50%;
+        max-width: 150px;
+        margin: auto;
+        margin-bottom: 32px;
+    }
+}

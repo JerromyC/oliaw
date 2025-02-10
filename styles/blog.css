@@ -1,0 +1,42 @@
+.post {
+    width: 100%;
+}
+
+.post:first-of-type {
+    margin-bottom: 5vw;
+}
+
+.post-header {
+    padding: 32px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.post-image {
+    margin: 0px;
+    margin-bottom: -10px;
+    padding: 0px;
+}
+
+.post-image img {
+    width: 100%;
+}
+
+.post-exerpt {
+    background-color: var(--tertiary);
+    padding: 32px;
+    color: var(--primary);
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+
+/*  */
+@media screen and (min-width: 800px) {
+    .post {
+        width: clamp(250px, 45%, 750px);
+        margin: 0;
+    }
+}

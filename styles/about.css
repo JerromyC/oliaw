@@ -1,0 +1,35 @@
+#about {
+    display: flex;
+    padding: 10vh 5vw;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 10vh 5vw;
+    margin: auto;
+    background-color: #FFFFFFE6;
+    border-radius: 50px 0 50px 0;
+}
+
+.about-wrapper h2 {
+    margin-bottom: 16px;
+}
+
+.about-wrapper .white-button {
+    max-width: 300px;
+    margin: 32px auto auto;
+}
+
+.about-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+}

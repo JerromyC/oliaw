@@ -1,0 +1,75 @@
+[
+    {
+      "id": "12345",
+      "title": "Organic Herbal Tea",
+      "description": "<p>A refreshing blend of organic herbs for relaxation.</p>",
+      "price": 12.99,
+      "currency": "USD",
+      "images": [
+        "./assets/bottle.png"
+      ],
+      "sku": "HERBAL-TEA-123",
+      "stock_status": "in_stock",
+      "supplier": "WordPress",
+      "category": "Teas",
+      "shipping_options": [
+        { "method": "Standard", "time": "5-7 days", "cost": 3.99 },
+        { "method": "Express", "time": "2-3 days", "cost": 7.99 }
+      ]
+    },
+    {
+      "id": "67890",
+      "title": "Natural Beeswax Candles",
+      "description": "<p>Handmade beeswax candles with a natural honey aroma.</p>",
+      "price": 19.99,
+      "currency": "USD",
+      "images": [
+        "./assets/bottle.png"
+      ],
+      "sku": "BEESWAX-CANDLE-456",
+      "stock_status": "out_of_stock",
+      "supplier": "CJ Dropshipping",
+      "category": "Candles",
+      "shipping_options": [
+        { "method": "Standard", "time": "7-10 days", "cost": 4.99 },
+        { "method": "Express", "time": "3-5 days", "cost": 8.99 }
+      ]
+    },
+    {
+        "id": "12345",
+        "title": "Organic Herbal Tea",
+        "description": "<p>A refreshing blend of organic herbs for relaxation.</p>",
+        "price": 12.99,
+        "currency": "USD",
+        "images": [
+          "./assets/bottle.png"
+        ],
+        "sku": "HERBAL-TEA-123",
+        "stock_status": "in_stock",
+        "supplier": "WordPress",
+        "category": "Teas",
+        "shipping_options": [
+          { "method": "Standard", "time": "5-7 days", "cost": 3.99 },
+          { "method": "Express", "time": "2-3 days", "cost": 7.99 }
+        ]
+      },
+    {
+        "id": "67890",
+        "title": "Natural Beeswax Candles",
+        "description": "<p>Handmade beeswax candles with a natural honey aroma.</p>",
+        "price": 19.99,
+        "currency": "USD",
+        "images": [
+          "./assets/bottle.png"
+        ],
+        "sku": "BEESWAX-CANDLE-456",
+        "stock_status": "out_of_stock",
+        "supplier": "CJ Dropshipping",
+        "category": "Candles",
+        "shipping_options": [
+          { "method": "Standard", "time": "7-10 days", "cost": 4.99 },
+          { "method": "Express", "time": "3-5 days", "cost": 8.99 }
+        ]
+      }
+  ]
+  
