@@ -48,7 +48,7 @@
     width: 50%;
     height: 25px;
     font-size: clamp(12pt, 8%, 16pt);
-    margin: 16px auto auto;
+    margin: 32px auto auto;
 }
 
 .small-button-light {

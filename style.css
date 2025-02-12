@@ -78,6 +78,7 @@ section .content-wrapper {
     background-color: #fff;
     padding: 20px;
     border-radius: 20px;
+    min-width: 100%;
 }
 
 h1,

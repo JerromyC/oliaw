@@ -21,7 +21,6 @@
     font-size: clamp(12pt, 8%, 16pt);
     font-weight: bold;
     text-align: center;
-    margin-bottom: auto;
 }
 
 .product a {
