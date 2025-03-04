@@ -1,4 +1,4 @@
-#about {
+.info-section_imageBG {
     display: flex;
     padding: 10vh 5vw;
     align-content: center;
@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 
-.about-wrapper {
+.info-section_imageBG__wrapper {
     height: 100%;
     width: 100%;
     padding: 10vh 5vw;
@@ -16,16 +16,16 @@
     border-radius: 50px 0 50px 0;
 }
 
-.about-wrapper h2 {
+.info-section_imageBG__wrapper h2 {
     margin-bottom: 16px;
 }
 
-.about-wrapper .white-button {
+.info-section_imageBG__wrapper .white-button {
     max-width: 300px;
     margin: 32px auto auto;
 }
 
-.about-bg {
+.info-section_imageBG__bg{
     position: absolute;
     top: 0;
     left: 0;

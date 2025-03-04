@@ -1,15 +1,15 @@
-#hero {
+.hero-section {
     padding-top: 5vw;
     height: auto;
 }
 
 @media screen and (min-width: 800px) {
-    #hero {
+    .hero-section {
         padding: 5vw;
         padding-bottom: 7.5vw;
     }
 
-    #hero p {
+    .hero-section p {
         margin-left: 0;
     }
 }

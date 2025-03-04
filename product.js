@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("dummy-products.json")
         .then(response => response.json())
         .then(products => {
-            const productWrapper = document.querySelector(".product-wrapper");
+            const productWrapper = document.querySelector(".shop-section_product-wrapper");
             productWrapper.innerHTML = ""; // Clear existing static HTML
 
             products.forEach(product => {
                 const productHTML = `
-                    <div class="tile product">
+                    <div class="tile shop-section_product">
                         <div class="action-wrapper">
                             <img src="./assets/star.gif" title="favorite" alt="Favorite">
                             <img src="./assets/cart.gif" title="add to cart" alt="Add to cart">

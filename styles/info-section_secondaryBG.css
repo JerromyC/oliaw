@@ -1,0 +1,34 @@
+.info-section_secondaryBG {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.quaternaryBG {
+    background-color: var(--quaternary);
+}
+
+.info-section_secondaryBG h2 {
+    margin-bottom: 16px;
+    font-family: 'Ralewy', sans-serif;
+}
+
+.info-section_secondaryBG p {
+    font-style: italic;
+}
+
+.info-section_secondaryBG p span {
+    display: block;
+    margin-bottom: 32px;
+    font-style: none;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 800px) {
+    .info-section_secondaryBG p:nth-child(odd) {
+        margin-left: -5%;
+    }
+    
+    .info-section_secondaryBG p:nth-child(even) {
+        margin-right: -5%;
+    }
+}

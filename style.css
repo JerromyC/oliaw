@@ -1,14 +1,15 @@
 @import url(./styles/nav.css);
 @import url(./styles/hero.css);
-@import url(./styles/intro.css);
+@import url(./styles/info-section_white.css);
 @import url(./styles/shop.css);
-@import url(./styles/about.css);
+@import url(./styles/info-section_imageBG.css);
 @import url(./styles/why.css);
-@import url(./styles/testimonials.css);
+@import url(./styles/info-section_secondaryBG.css);
 @import url(./styles/blog.css);
 @import url(./styles/footer.css);
 
 @import url(./styles/component-styles/buttons.css);
+@import url(./styles/background.css);
 
 
 
@@ -42,13 +43,62 @@ section {
     position: relative;
     z-index: 100;
     padding: 15vw 5vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
-section .content-wrapper {
+.content-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.content-wrapper_left-aligned {
+    /* desktop view only for now */
+}
+
+.content-wrapper ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content-wrapper_ul li {
+    width: 100%;
+	margin: 0;
+	padding: 16px 0 16px 32px;
+	list-style: none;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 15px;
+}
+
+.content-wrapper_ul li:nth-child(1),
+.content-wrapper_ul li:nth-child(4),
+.content-wrapper_ul li:nth-child(7) {
+    background-image: url(./assets/leaf.svg);
+}
+
+.content-wrapper_ul li:nth-child(2),
+.content-wrapper_ul li:nth-child(5),
+.content-wrapper_ul li:nth-child(8) {
+    background-image: url(./assets/leaf02.svg);
+}
+
+.content-wrapper_ul li:nth-child(3),
+.content-wrapper_ul li:nth-child(6),
+.content-wrapper_ul li:nth-child(9) {
+    background-image: url(./assets/leaf03.svg);
 }
 
 .inner-wrapper {
@@ -61,7 +111,6 @@ section .content-wrapper {
     flex-wrap: wrap;
     flex-grow: stretch;
     justify-content: space-evenly;
-    align-content: center;
     width: 100%;
     margin: 8px auto;
     flex-wrap: wrap; /* Ensures responsiveness */
@@ -80,6 +129,15 @@ section .content-wrapper {
     border-radius: 20px;
     min-width: 100%;
 }
+
+/* special tile styles */
+.benefit img {
+    width: 30%;
+    margin: auto;
+}
+
+
+/* ------- */
 
 h1,
 h2 {
@@ -121,6 +179,24 @@ a {
     height: 64px;
 }
 
+.line {
+    display: block;
+    width: 80%;
+    margin: auto;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+.line:first-of-type {
+    margin-bottom: 64px;
+}
+
+.line:last-of-type {
+    margin-top: 64px;
+}
+
+/* ------------ */
+
 
 .topper {
     font-family: 'Raleway', sans-serif;
@@ -135,7 +211,7 @@ a {
 .sub-heading {
     font-family: "Raleway", sans-serif;
     font-size: clamp(20pt, 4vw, 25pt);
-    margin: 16px auto 32px auto;
+    margin: 16px auto 32px 0px;
     line-height: 1;
 }
 
@@ -149,36 +225,143 @@ a {
     z-index: -1;
 }
 
+.toTop {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: clamp(50px, 10vw, 75px);
+    height: clamp(50px, 10vw, 75px);
+    background-color: var(--secondary);
+    border: 5px solid var(--primary);
+    color: var(--primary);
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    opacity: 50%;
+    z-index: 100;
+}
+
+.toTop:hover {
+    opacity: 1;
+}
+
+.toTop img {
+    height: 50%;
+    margin: auto;
+}
+
 .shadow-host-companion {
     display: none;
 }
 
 @media screen and (min-width: 800px) {
     section {
-        padding: 10vw 5vw;
+        padding: 5vw;
     }
 
     section .content-wrapper {
+        position: relative;
         gap: 8px;
         width: clamp(300px, 75%, 900px);
+    }
+
+    .content-wrapper h2 {
+        width: clamp(450px, 60%, 1500px);
         margin: auto;
+        margin-bottom: 32px;
+    }
+
+    .content-wrapper > p {
+        width: clamp(450px, 80%, 2500px);
+        margin: auto;
+    }
+
+    .content-wrapper .centered {
+        text-align: center;
     }
 
     section .content-wrapper-wide {
         width: clamp(300px, 90%, 2000px);
     }
 
+    .content-wrapper_ul {
+        border: 2px solid var(--tertiary);
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 32px;
+    }
+
+    .content-wrapper_ul li {
+        width: 50%;
+    }
+
     .inner-wrapper {
         margin-top: 5vw;
     }
 
-    #intro h2,
-    #shop h2 {
-        margin: auto;
-        margin-bottom: 16px;
+    #blog .inner-wrapper {
+        margin: 0px auto;
     }
 
+    .tile {
+        min-width: 24%;
+    }
+
+    /* IDK BRO---------------------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!____________________!!!!!!!!!!!!!! */
+
+        /* special tile styles */
+        
+        .benefit {
+            width: clamp(250px, 30%, 50%);
+        }
+    
+        .benefit p {
+            width: 100%;
+        }
+    
+        .benefit img {
+            width: 50%;
+            max-width: 150px;
+            margin: auto;
+            margin-bottom: 32px;
+        }
+        /* ----- */
+
     .sub-heading {
-        width: 75%;
+        width: 80%!important;
+        text-align: left;
+        margin-top: 32px!important;
+        margin-left: 0px!important;
+        margin-bottom: 32px!important;
+    }
+
+    .background-image-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .background-image-wrapper img {
+        height: 500px;
+        width: auto;
+    }
+
+    .top-left {
+        position: absolute;
+        top: -1px;
+        left: 0;
+    }
+
+    .background-image {
+        width: 100vw;
+        height: 100%;
+        background-repeat: repeat-x;
+        opacity: 50%;
     }
 }
