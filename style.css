@@ -270,9 +270,8 @@ a {
     }
 
     .content-wrapper h2 {
-        width: clamp(450px, 60%, 1500px);
+        width: clamp(450px, 70%, 1500px);
         margin: auto;
-        margin-bottom: 32px;
     }
 
     .content-wrapper > p {

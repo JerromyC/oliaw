@@ -63,12 +63,17 @@
 }
 
 .whereBottomImg,
-.howBottomImg {
+.howBottomImg,
+.connectBottomImg {
     position: absolute;
     bottom: 0px;
     left: 0px;
     width: 100%;
     height: auto;
+}
+
+.connectBottomImg {
+    bottom: -1px;
 }
 
 #about-page h1 {
@@ -98,6 +103,10 @@
 
 @media screen and (min-width: 800px) {
 
+    .about-hero {
+        padding-bottom: 5vw;
+    }
+
     #where{
         padding-top: 10vw;
         padding-bottom: 15vw;
@@ -106,6 +115,10 @@
     #how {
         padding-top: 5vw;
         padding-bottom: 25vw;
+    }
+
+    #connect {
+        padding: 2.5vw;
     }
 
     .about-bubble {

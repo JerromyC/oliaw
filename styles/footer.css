@@ -85,6 +85,10 @@ footer h2 {
 
 
 @media screen and (min-width: 800px) {
+    footer {
+        padding: 5vw;
+    }
+
     .signup-inner {
         width: 60%;
         justify-content: center;
